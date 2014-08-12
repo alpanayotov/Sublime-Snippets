@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[\$sidebar = 'defaultp-sidebar';
+if (is_page() && \$custom = get_post_meta(get_the_ID(),'_custom_sidebar', true)) {
+	\$sidebar = \$custom;
+}
+dynamic_sidebar(\$sidebar);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sidebar</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

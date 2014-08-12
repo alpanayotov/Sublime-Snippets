@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[function $1_timthumb(\$src, \$w, \$h, \$zc=2) {
+	\$src = urlencode(\$src);
+	\$w = absint(\$w);
+	\$h = absint(\$h);
+	\$zc = absint(\$zc);
+
+	return add_query_arg(array('src'=>\$src, 'w'=>\$w, 'h'=>\$h, 'zc'=>\$zc), get_bloginfo('template_directory') . '/lib/timthumb.php');
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>timthumb</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>php</scope> -->
+</snippet>

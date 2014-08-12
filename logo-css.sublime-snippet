@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[#logo { width: $1; font-size: 0; line-height: 0; }
+#logo a { display: block; width: ; height: ; background: url(images/logo.png) no-repeat 0 0; text-indent: -4000px; }
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>clogo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

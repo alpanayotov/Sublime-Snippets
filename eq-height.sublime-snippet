@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[	var max = 0;
+	var elem;
+
+	\$('').each( function(){
+		elem = \$(this).outerHeight();
+
+		if ( elem > max) {
+			max = elem;
+		};
+	});
+
+	\$('').css('height', max + 'px');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>eq-height</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

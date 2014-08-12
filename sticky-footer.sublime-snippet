@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[#wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -$1px; }
+
+#footer-push { height: $1px; }
+#footer { height: $1px; }]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sticky</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

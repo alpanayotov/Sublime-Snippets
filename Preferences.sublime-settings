@@ -1,0 +1,12 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
+	"font_size": 11.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"soda_classic_tabs": true,
+	"theme": "Soda Dark.sublime-theme",
+	"word_wrap": true
+}

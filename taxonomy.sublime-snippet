@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[\$labels = array(
+	'name'                => _x( '$0', 'taxonomy general name' ),
+	'singular_name'       => _x( '', 'taxonomy singular name' ),
+	'search_items'        => __( 'Search ' ),
+	'all_items'           => __( 'All ' ),
+	'parent_item'         => __( 'Parent ' ),
+	'parent_item_colon'   => __( 'Parent :' ),
+	'edit_item'           => __( 'Edit ' ), 
+	'update_item'         => __( 'Update ' ),
+	'add_new_item'        => __( 'Add New ' ),
+	'new_item_name'       => __( 'New ' ),
+	'menu_name'           => __( '' )
+); 	
+
+\$args = array(
+	'hierarchical'        => true,
+	'labels'              => \$labels,
+	'show_ui'             => true,
+	'show_admin_column'   => true,
+	'query_var'           => true,
+	'rewrite'             => array( 'slug' => '' )
+);
+
+register_taxonomy( 'tax_name', 'post_type', \$args );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>taxonomy</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

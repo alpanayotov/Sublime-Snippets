@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[define('CRB_THEME_VERSION', '1.0'); // change here to force cache refresh
+		
+# Enqueue Custom Scripts
+add_action( 'wp_enqueue_scripts', '$0_enqueue_srcipts' );
+function $0_enqueue_srcipts(){
+	
+	\$dir =  get_bloginfo('stylesheet_directory');
+
+	# enqueue jquery
+	wp_enqueue_script('jquery');
+
+	# enqueue custom scripts
+	wp_enqueue_script('functions', \$dir . '/js/functions.js', array('jquery'),  CRB_THEME_VERSION );	
+
+	# enqueue custom styles
+	wp_enqueue_style( 'style', \$dir . '/style.css', array(), CRB_THEME_VERSION );
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>wpscripts</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

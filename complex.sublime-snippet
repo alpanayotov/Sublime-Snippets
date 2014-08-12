@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[Carbon_Field::factory('complex', '$1')
+	->setup_labels(array(
+		'singular_name' => '$2',
+		'plural_name'	=> '$2s'
+	))
+	->add_fields(array(
+		$3
+	)),]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>complex</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

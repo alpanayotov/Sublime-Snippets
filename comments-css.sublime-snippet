@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[.commentlist { padding-top: 10px; }
+.commentlist { padding-top: 10px; }
+.commentlist .children { padding-left: 25px; }
+.commentlist li { list-style: none; }
+.commentlist label { display: block; padding-bottom: 5px; }
+.commentlist .comment-author img { vertical-align: middle; }
+.commentlist .comment-author,
+.commentlist .comment-meta,
+.commentlist .comment-text,
+.commentlist .comment-reply { padding-bottom: 10px; }
+
+#respond label { display: block; padding-bottom: 5px; }
+#respond h3 { padding-bottom: 5px; }
+#respond p,
+#respond .logged-in-as { padding-bottom: 5px; }]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>c-css</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>css</scope> -->
+</snippet>

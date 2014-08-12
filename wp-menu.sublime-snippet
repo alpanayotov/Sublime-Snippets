@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[wp_nav_menu( array(
+		'theme_location'  => 'main-menu$0',
+		'container'       => false, 
+		'fallback_cb'     => false,
+		'depth'			  => 1
+	));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wp-menu</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
