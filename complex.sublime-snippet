@@ -1,11 +1,11 @@
 <snippet>
-	<content><![CDATA[Carbon_Field::factory('complex', '$1')
+	<content><![CDATA[Carbon_Field::factory('complex', 'crb_$1', __( '$2', 'crb' ))
 	->setup_labels(array(
-		'singular_name' => '$2',
-		'plural_name'	=> '$2s'
+		'singular_name' => __('$3', 'crb'),
+		'plural_name'	=> __('$3s', 'crb'),
 	))
 	->add_fields(array(
-		$3
+		$4
 	)),]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>complex</tabTrigger>
