@@ -1,7 +1,9 @@
 <snippet>
-	<content><![CDATA[array( 'width' => $1, 'height' => $2, 'crop' => $3 )
-Hello, ${1:this} is a ${2:snippet}.
-]]></content>
+	<content><![CDATA[array( 
+	'width'  => $1, 
+	'height' => $2, 
+	'crop'   => $3, 
+);]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>resize</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
