@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[Carbon_Container::factory('custom_fields', __( '${1}', 'crb' ))
+	->show_on_post_type( '${2}' )
+	->show_on_template( 'templates/${3}' )
+	->add_fields( array(
+		${4}
+	));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>customfields</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
