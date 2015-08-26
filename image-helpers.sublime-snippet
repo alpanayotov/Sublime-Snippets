@@ -1,0 +1,58 @@
+<snippet>
+	<content><![CDATA[function crb_image_help_text( \$width, \$height ){
+	ob_start();
+	printf(__('Recommended image size is %1\$spx * %2\$spx. Larger or smaller images will be resized.', 'crb'), \$width, \$height );
+
+	return ob_get_clean();
+}
+
+function crb_wpthumb( \$id, \$width, \$height, \$crop=false, \$classes='' ){
+	\$size = array( 
+		'width'  => \$width, 
+		'height' => \$height, 
+		'crop'   => \$crop, 
+	);
+	
+	\$attr = array(
+		'class' => \$classes,
+	);
+	
+	echo wp_get_attachment_image( \$id, \$size, false, \$attr );
+}
+
+function crb_get_post_thumbnail( \$id, \$width, \$height, \$crop=false, \$classes='' ){
+	if ( !has_post_thumbnail( \$id ) ) {
+		return;
+	}
+
+	\$size = array( 
+		'width'  => \$width, 
+		'height' => \$height, 
+		'crop'   => \$crop, 
+	);
+	
+	\$attr = array(
+		'class' => \$classes,
+	);
+
+	echo get_the_post_thumbnail( \$id, \$size, \$attr );
+}
+
+function crb_get_attachment_url( $id, $width, $height, $crop=false ){
+
+	$size = array( 
+		'width'  => $width, 
+		'height' => $height, 
+		'crop'   => $crop, 
+	);
+
+	$image_data    = wp_get_attachment_image_src( $id, $size );
+
+	echo $image_data[ 0 ];
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>imagefunctions</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

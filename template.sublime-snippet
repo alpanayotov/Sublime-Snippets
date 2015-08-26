@@ -5,7 +5,6 @@
 */
 
 get_header();
-the_post(); 
 ?>
 
 	<?php if (have_posts()) : ?>
