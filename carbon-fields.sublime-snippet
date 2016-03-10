@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[Carbon_Field::factory('$1', 'crb_$2', __( '$3', 'crb'))$4,]]></content>
+	<content><![CDATA[Field::make('$1', 'crb_$2', __( '$3', 'crb'))$4,]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>cf</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

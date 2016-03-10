@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[Carbon_Field::factory('complex', 'crb_$1', __( '$2', 'crb' ))
+	<content><![CDATA[Field::make('complex', 'crb_$1', __( '$2', 'crb' ))
 	->setup_labels(array(
 		'singular_name' => __('$3', 'crb'),
 		'plural_name'	=> __('$3s', 'crb'),

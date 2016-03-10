@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[Carbon_Container::factory('custom_fields', __( '${1}', 'crb' ))
+	<content><![CDATA[Container::make('post_meta', __( '${1}', 'crb' ))
 	->show_on_post_type( '${2}' )
 	->show_on_template( 'templates/${3}' )
 	->add_fields( array(
